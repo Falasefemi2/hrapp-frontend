@@ -63,7 +63,7 @@ export const useUpdateDepartment = () => {
     { id: string; payload: Partial<Department> }
   >({
     mutationFn: ({ id, payload }) => updateDepartment(id, payload),
-    onSuccess: (data, variables) => {
+    onSuccess: (variables) => {
       // Invalidate both the list and the specific department detail
       queryClient.invalidateQueries({ queryKey: departmentKeys.lists() });
       queryClient.invalidateQueries({

@@ -63,7 +63,7 @@ export const useUpdateDesignation = () => {
     { id: string; payload: Partial<Designation> }
   >({
     mutationFn: ({ id, payload }) => updateDesignation(id, payload),
-    onSuccess: (data, variables) => {
+    onSuccess: (variables) => {
       // Invalidate both the list and the specific designation detail
       queryClient.invalidateQueries({ queryKey: designationKeys.lists() });
       queryClient.invalidateQueries({
