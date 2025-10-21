@@ -1,4 +1,4 @@
-import { Building2, Briefcase, TrendingUp, Shield, Users, ArrowRight } from "lucide-react"
+import { Building2, Briefcase, TrendingUp, Shield, Users, ArrowRight, UserPlus, FileSignature } from "lucide-react"
 import { Card } from "@/components/ui/card"
 import { Link } from "react-router"
 
@@ -48,6 +48,25 @@ const dashboardItems = [
         bgColor: "bg-indigo-50",
         hoverColor: "group-hover:bg-indigo-100",
     },
+    {
+        title: "Candidate",
+        description: "Manage potential hires throughout the recruitment process",
+        icon: UserPlus,
+        to: "/hr/candidate",
+        color: "text-teal-600",
+        bgColor: "bg-teal-50",
+        hoverColor: "group-hover:bg-teal-100",
+    },
+    {
+        title: "Offer",
+        description: "Generate and manage job offers for selected candidates",
+        icon: FileSignature,
+        to: "/hr/offer",
+        color: "text-orange-600",
+        bgColor: "bg-orange-50",
+        hoverColor: "group-hover:bg-orange-100",
+    }
+
 ]
 
 export function DashboardCards() {
