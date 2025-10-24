@@ -11,6 +11,7 @@ import LevelPage from './components/pages/hr/level'
 import RolePage from './components/pages/hr/role'
 import UserPage from './components/pages/hr/user'
 import UserCandidate from './components/pages/hr/candidate'
+import UserOffer from './components/pages/hr/offer'
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
             <Route path="/hr/role" element={<RolePage />} />
             <Route path="/hr/user" element={<UserPage />} />
             <Route path="/hr/candidate" element={<UserCandidate />} />
+            <Route path="/hr/offer" element={<UserOffer />} />
           </Route>
         </Route>
       </Routes>

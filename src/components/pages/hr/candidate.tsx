@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Plus, Pencil, Trash2, UserPlus, Search } from "lucide-react"
+import { Pencil, Trash2, UserPlus, Search } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
     Dialog,
